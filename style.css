@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Mono:ital,wght@1,200&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    padding: 1rem;
+}
+
+.main-header {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 10rem;
+}
+
+.container {
+    width: 70rem;
+    height: 70rem;
+
+    background-color: rgb(250, 215, 215);
+    border: rgb(216, 68, 68) 1rem solid;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 4.375rem;
+    height: 4.375rem;
+    background-color: whitesmoke;
+    border: 0.2px solid grey;
+}
