@@ -8,13 +8,12 @@ const gridSize = 16;
 
 btnNewGrid.addEventListener('click', function(){
 
-    for (let i=0; i <= (gridSize*gridSize); i++) {
+    for (let i=1; i <= (gridSize*gridSize); i++) {
         const div = document.createElement('div');
     div.className = 'tile';
-    div.textContent = i;
     gridContainer.appendChild(div);
 
     }
-});
+},{once: true});
 
 

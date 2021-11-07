@@ -25,19 +25,23 @@ body {
 }
 
 .container {
-    width: 70rem;
-    height: 70rem;
+    width: 60rem;
+    height: 60rem;
+    box-sizing: content-box;
 
-    background-color: rgb(250, 215, 215);
-    border: rgb(216, 68, 68) 1rem solid;
+    background-color: peachpuff;
+    border: rgb(216, 68, 68) 5rem solid;
+    border-radius: 5%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .tile {
-    width: 4.375rem;
-    height: 4.375rem;
+    width: 3.75rem;
+    height: 3.75rem;
     background-color: whitesmoke;
-    border: 0.2px solid grey;
+    border: 0.1px solid grey;
 }
