@@ -1,7 +1,7 @@
 // SELECTING QUERIES
 const btnNewGrid = document.querySelector('.btn-new-grid');
 const gridContainer = document.querySelector('.container');
-const tiles = document.querySelectorAll('.tile');
+let tiles;
 
 // GENERATING INITAL GRID
 
@@ -15,6 +15,8 @@ btnNewGrid.addEventListener('click', function(){
     gridContainer.appendChild(div);
     };
 
+    tiles = document.querySelectorAll('.tile');
+
     startDrawing();
 
 },{once: true});
@@ -23,27 +25,21 @@ btnNewGrid.addEventListener('click', function(){
 // GRID MOUSE EVENTS
 
 function startDrawing() {
-    // const tiles = document.querySelectorAll('.tile');
-
     tiles.forEach((tile)=>{
         tile.addEventListener('click', draw.bind(this));
     });
-}
+};
 
 function draw(){
-    // const tiles = document.querySelectorAll('.tile');
-
     tiles.forEach((tile) => {
         tile.addEventListener('mouseover',()=>{
             tile.style.backgroundColor = 'black';
-            // console.log('You touched a tile!!');
         });
     });
 
     tiles.forEach((tile) => {
         tile.addEventListener('mouseout',()=>{
             tile.style.backgroundColor = 'grey';
-            // console.log('You touched a tile!!');
         });
     });
 };
