@@ -19,9 +19,22 @@ body {
     padding: 1rem;
 }
 
+.header-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
 .main-header {
     font-family: 'Shadows Into Light', cursive;
     font-size: 10rem;
+}
+
+.instructions {
+    font-size: 2rem;
 }
 
 .container {
@@ -43,3 +56,8 @@ body {
     background-color: whitesmoke;
     border: 0.1px solid grey;
 }
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+};

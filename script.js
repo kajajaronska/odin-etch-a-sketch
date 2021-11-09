@@ -2,13 +2,13 @@
 const btnNewGrid = document.querySelector('.btn-new-grid');
 const gridContainer = document.querySelector('.container');
 let tiles;
+const mainHeader = document.querySelector('.main-header');
 
 // GENERATING INITAL GRID
 
-const gridSize = 64;
+const gridSize = 16;
 let tileWidth = `${60/gridSize}rem`;
 let tileHeight = `${60/gridSize}rem`;
-
 
 btnNewGrid.addEventListener('click', function(){
 
@@ -19,6 +19,8 @@ btnNewGrid.addEventListener('click', function(){
     div.style.height = tileHeight;
     gridContainer.appendChild(div);
     };
+
+    gridContainer.classList.remove('hidden');
 
     tiles = document.querySelectorAll('.tile');
 
