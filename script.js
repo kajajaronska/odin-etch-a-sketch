@@ -12,7 +12,7 @@ const userTileNumber = document.querySelector('.user-tile-input');
 let drawingMode = false;
 
 // GENERATING INITAL GRID
-let gridSize = 100;
+let gridSize = 16;
 let tileWidth = `${60/gridSize}rem`;
 let tileHeight = `${60/gridSize}rem`;
 
@@ -27,8 +27,6 @@ btnNewGrid.addEventListener('click', function(){
     gridContainer.classList.remove('hidden');
     btnNewGrid.classList.add('hidden');
     userGridGenerator.classList.remove('hidden');
-
-    // tiles = document.querySelectorAll('.tile');
 
     startDrawing();
 
