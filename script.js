@@ -7,6 +7,7 @@ const instructions = document.querySelector('.instructions');
 const userGridGenerator = document.querySelector('.user-grid-generator');
 const intro = document.querySelector('.intro');
 const userGridInstructions = document.querySelector('.user-grid-instructions');
+let drawingMode = false;
 
 // GENERATING INITAL GRID
 let gridSize = 20;
@@ -33,20 +34,28 @@ btnNewGrid.addEventListener('click', function(){
 
     tiles = document.querySelectorAll('.tile');
 
-    startDrawing();
+    drawingTrigger();
 
 },{once: true});
 
 
 // GRID MOUSE EVENTS
 
+
+function drawingTrigger() {
+    if (!drawingMode) startDrawing();
+    if(drawingMode) stopDrawing();
+}
+
 function startDrawing() {
     tiles.forEach((tile)=>{
-        tile.addEventListener('click', draw.bind(this));
+        tile.addEventListener('click', drawMotion.bind(this));
     });
+
+    drawingMode = true;
 };
 
-function draw(){
+function drawMotion(){
     tiles.forEach((tile) => {
         tile.addEventListener('mouseover',()=>{
             tile.style.backgroundColor = 'black';
@@ -59,6 +68,15 @@ function draw(){
         });
     });
 };
+
+function stopDrawing(){
+    tiles.forEach((tile)=>{
+        tile.removeEventListener('click', draw.bind(this));
+    });
+
+    drawingMode = false;
+};
+
 
 // USER GRID GENERATOR
 

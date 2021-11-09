@@ -64,6 +64,16 @@ body {
     position: absolute;
 }
 
+.user-tile-input {
+    display: inline-block;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: grey 1px solid;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
 .btn-style {
     display: inline-block;
     padding: 1rem;
