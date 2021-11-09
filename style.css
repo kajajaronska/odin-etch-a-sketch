@@ -40,8 +40,6 @@ body {
 }
 
 .tile {
-    width: 3.75rem;
-    height: 3.75rem;
     background-color: whitesmoke;
     border: 0.1px solid grey;
 }

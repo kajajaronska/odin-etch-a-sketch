@@ -5,13 +5,18 @@ let tiles;
 
 // GENERATING INITAL GRID
 
-const gridSize = 16;
+const gridSize = 64;
+let tileWidth = `${60/gridSize}rem`;
+let tileHeight = `${60/gridSize}rem`;
+
 
 btnNewGrid.addEventListener('click', function(){
 
     for (let i=1; i <= (gridSize*gridSize); i++) {
         const div = document.createElement('div');
     div.className = 'tile';
+    div.style.width = tileWidth;
+    div.style.height = tileHeight;
     gridContainer.appendChild(div);
     };
 
