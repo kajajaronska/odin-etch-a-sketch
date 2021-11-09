@@ -33,7 +33,9 @@ body {
     font-size: 10rem;
 }
 
-.instructions {
+.instructions,
+.intro,
+.user-grid-instructions {
     font-size: 2rem;
 }
 

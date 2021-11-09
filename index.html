@@ -13,11 +13,13 @@
     <!-- HEADER SECTION -->
     <div class="header-container">
         <h1 class="main-header">Etch-a-Sketch</h1>
-        <p class="instructions">My take on an iconic drawing toy!</p>
+        <p class="intro">My take on an iconic drawing toy!</p>
+        <p class="instructions hidden">Click on any tile to start drawing.</p>
+        <p class="user-grid-instructions hidden">More tiles on your mind? Type your number below.</p>
         <button class="btn-new-grid">Click for magic</button>
 
         <div class="user-grid-generator hidden">
-            <input type="number"><button class="btn-user-grid">Generate</button>
+            <input type="number" name="btn-user-grid" min="1" max="100" placeholder="Tiles per side"><button class="btn-user-grid" >Generate</button>
         </div>
     </div>
 

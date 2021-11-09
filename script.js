@@ -5,10 +5,11 @@ let tiles;
 const mainHeader = document.querySelector('.main-header');
 const instructions = document.querySelector('.instructions');
 const userGridGenerator = document.querySelector('.user-grid-generator');
-
+const intro = document.querySelector('.intro');
+const userGridInstructions = document.querySelector('.user-grid-instructions');
 
 // GENERATING INITAL GRID
-let gridSize = 16;
+let gridSize = 20;
 let tileWidth = `${60/gridSize}rem`;
 let tileHeight = `${60/gridSize}rem`;
 
@@ -22,7 +23,10 @@ btnNewGrid.addEventListener('click', function(){
     gridContainer.appendChild(div);
     };
 
-    instructions.textContent = "More tiles on your mind? Type your number below.";
+    intro.classList.add('hidden');
+    instructions.classList.remove('hidden');
+    userGridInstructions.classList.remove('hidden');
+    
     gridContainer.classList.remove('hidden');
     btnNewGrid.classList.add('hidden');
     userGridGenerator.classList.remove('hidden');
@@ -55,6 +59,8 @@ function draw(){
         });
     });
 };
+
+// USER GRID GENERATOR
 
 
 
