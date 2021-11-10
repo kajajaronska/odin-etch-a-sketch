@@ -72,6 +72,9 @@ btnUserGrid.addEventListener('click',function(){
         removeCurrentGrid();
         createGrid();
         modal.classList.add('hidden');
+
+        paragraph1.textContent = `More tiles on your mind?`
+        paragraph2.textContent = `Type your number below.`;
     } else {
         console.log('crazy!!!')
         paragraph1.textContent = `Whoa whoa whoa! ${userTileNumber.value} tiles?`
