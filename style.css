@@ -112,29 +112,23 @@ body {
 }
 
 .modal-content {
+    width: 50rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
     border-radius: 0.5rem;
-    padding: 0 1.5rem 1rem 1.5rem;
+    padding: 0 1.5rem 2rem 1.5rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
     font-size: 2.5rem;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
     gap: 1rem;
-}
-
-.repeat-button {
-    width: 5rem;
-    align-self: flex-end;
-}
-
-.repeat-button:hover,.repeat-button:focus {
-    transform: scale(1.2);
 }
 
 .close-button {
@@ -156,6 +150,7 @@ body {
 
 .modal-part-1 {
     display: flex;
+    margin-top: -2rem;
 }
 
 .modal-part-2 {
