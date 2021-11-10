@@ -17,11 +17,6 @@
         <p class="instructions hidden">Click on any tile to start/stop drawing.</p>
         <p class="user-grid-instructions hidden">More tiles on your mind? Type your number below.</p>
         <button class="btn-new-grid btn-style">Click for magic</button>
-
-        <div class="user-grid-generator hidden">
-            <input class="user-tile-input" type="number" name="btn-user-grid" min="1" max="100" placeholder="Tiles per side">
-            <button class="btn-user-grid btn-style" >Generate</button>
-        </div>
     </div>
 
     <!-- MAIN GRID SECTION -->
@@ -29,6 +24,25 @@
         
     </div>
 
+    <!-- MODAL -->
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="modal-part-1">
+                <p class="user-grid-paragraoh">More tiles on your mind?</p>
+            </div>
+            <div class="modal-part-2">
+                <p> Type your number below.</p>
+                <div class="user-grid-generator">
+                    <input class="user-tile-input" type="number" name="btn-user-grid" min="1" max="100" placeholder="Tiles per side">
+                    <button class="btn-user-grid btn-style" >Generate</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
